@@ -1,0 +1,16 @@
+class CreateStepIngredients < ActiveRecord::Migration
+  def self.up
+    create_table :step_ingredients, id => false do |t|
+      t.integer :recipe_id
+      t.integer :step_number
+      t.integer :ingredient_id
+      t.float :amount_required
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :step_ingredients
+  end
+end

@@ -34,6 +34,10 @@ GEM
       abstract (>= 1.0.0)
     faker (0.9.5)
       i18n (~> 0.4)
+    formtastic (1.2.4)
+      actionpack (>= 2.3.7)
+      activesupport (>= 2.3.7)
+      i18n (~> 0.4)
     i18n (0.5.0)
     jquery-rails (1.0.12)
       railties (~> 3.0)
@@ -44,6 +48,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    mocha (0.9.12)
     nifty-generators (0.4.6)
     polyglot (0.3.1)
     rack (1.2.3)
@@ -78,7 +83,9 @@ PLATFORMS
 
 DEPENDENCIES
   faker
+  formtastic (~> 1.2.3)
   jquery-rails
+  mocha
   nifty-generators
   rails (= 3.0.9)
   sqlite3

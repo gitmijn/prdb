@@ -1,0 +1,7 @@
+<%= semantic_form_for @recipe  do |f| %>
+    <%= f.inputs %>
+    <%= f.inputs :for => :steps do |j| %>
+      <% j.input :instruction, :input_html => { :class => 'autogrow', :rows => 3 } %>
+    <% end %>
+  <%= f.buttons %>
+<% end %>
